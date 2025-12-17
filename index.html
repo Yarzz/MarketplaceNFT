@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NFT Marketplace</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+</head>
+<body>
+
+  <div class="card">
+    <h2>NFT Marketplace</h2>
+
+    <button onclick="connectWallet()">Connect MetaMask</button>
+    <p id="account">Not connected</p>
+
+    <hr />
+
+    <h3>Mint NFT</h3>
+    <button onclick="mintNFT()">Mint</button>
+
+    <hr />
+
+    <h3>List NFT</h3>
+    <input id="tokenId" placeholder="Token ID" />
+    <input id="price" placeholder="Price in ETH" />
+    <button onclick="listNFT()">List NFT</button>
+
+    <hr />
+
+    <h3>Buy NFT</h3>
+    <input id="buyTokenId" placeholder="Token ID" />
+    <input id="buyPrice" placeholder="Price in ETH" />
+    <button onclick="buyNFT()">Buy NFT</button>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
